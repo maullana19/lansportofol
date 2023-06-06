@@ -1,3 +1,5 @@
+"use client";
+import Link from "next/link";
 
 const SectionsHome1 = () => {
   return (
@@ -8,10 +10,13 @@ const SectionsHome1 = () => {
         </h1>
         <p className="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">
           Where here I focus on exploring a world that is unknown to all of us and finding out how the world and nature work
+
+
         </p>
+
         <div className="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
-          <a
-            href="#"
+          <Link
+            href={'/about'}
             className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg hover:text-red-400 hover:underline"
           >
             Get started
@@ -28,7 +33,7 @@ const SectionsHome1 = () => {
                 clipRule="evenodd"
               />
             </svg>
-          </a>
+          </Link>
         </div>
         <div className="flex flex-col mt-6">
           <div>

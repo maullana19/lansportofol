@@ -6,7 +6,7 @@ export default function BlogPage() {
       <LayoutWraps>
         <div className={"min-h-screen justify-center items-center flex"}>
           <div>
-            <h1 className=" text-gray-700 font-semibold">BLOG | BEING DEVELOPMENT</h1>
+            <h1 className=" text-gray-700 font-semibold">BLOG | Under Development</h1>
           </div>
         </div>
       </LayoutWraps>
