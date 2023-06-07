@@ -17,12 +17,12 @@ const SectionsHome1 = () => {
         <div className="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
           <Link
             href={'/about'}
-            className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg hover:text-red-400 hover:underline"
+            className="inline-flex justify-center items-center py-2 px-3 text-base font-medium text-center text-white rounded-lg hover:text-white hover:bg-red-500 hover:animate-bounce"
           >
             Get started
             <svg
               aria-hidden="true"
-              className="ml-2 -mr-1 w-4 h-4"
+              className="ml-2 -mr-1 w-4 h-4 "
               fill="currentColor"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"

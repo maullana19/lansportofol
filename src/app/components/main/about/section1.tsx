@@ -148,16 +148,16 @@ const Section1About = () => {
             </div>
             <div className="flex mx-auto flex-wrap mb-20 ">
               <button className={`${activeTab === 1
-                ? 'sm:px-6 py-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 title-font font-medium inline-flex items-center leading-none border-red-500 hover:text-gray-900 tracking-wider text-red-600'
-                : 'sm:px-6 py-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 title-font font-medium inline-flex items-center leading-none border-gray-200 hover:text-gray-900 tracking-wider'}`}
+                ? 'sm:px-6 py-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 title-font font-semibold inline-flex items-center  border-blue-600  text-blue-600'
+                : 'sm:px-6 py-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 title-font font-medium inline-flex items-center  border-gray-200 '}`}
                 onClick={() => handleActiveTabs(1)}
               >
 
                 PT Trans Retail Indonesia
               </button>
               <button className={`${activeTab === 2
-                ? 'sm:px-6 py-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 title-font font-medium inline-flex items-center leading-none border-red-500 text-red-600 hover:text-gray-900 tracking-wider'
-                : 'sm:px-6 py-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 title-font font-medium inline-flex items-center leading-none border-gray-200 hover:text-gray-900 tracking-wider'}`}
+                ? 'sm:px-6 py-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 title-font font-semibold inline-flex items-center  border-indigo-700 text-indigo-700 '
+                : 'sm:px-6 py-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 title-font font-medium inline-flex items-center  border-gray-200 '}`}
                 onClick={() => handleActiveTabs(2)}
               >
                 Freelance at JASANYA.TECH
@@ -173,7 +173,7 @@ const Section1About = () => {
                 height={500}
               />
               <div className="flex flex-col text-center w-full">
-                <h1 className="text-xl font-semibold mb-4 text-red-600">
+                <h1 className="text-xl font-semibold mb-4 text-blue-600">
                   as Customer Service <span className="text-xs text-gray-500">- 3 years</span>
                 </h1>
                 <p className="lg:w-2/3 mx-auto leading-relaxed text-base text-gray-600">
@@ -192,14 +192,14 @@ const Section1About = () => {
                 height={500}
               />
               <div className="flex flex-col text-center w-full">
-                <h1 className="text-xl font-semibold mb-4 text-red-600">
+                <h1 className="text-xl font-semibold mb-4 text-indigo-700">
                   as FrontEnd Developer <span className="text-xs text-gray-500">- 1 years</span>
                 </h1>
                 <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
                   I have worked as a freelance frontend developer on a website or mobile app project for one year with a team from the best academic circles,
                   I and the team have very useful knowledge for web technology where we make it happen with design, consistency and up-to-date technology
                 </p>
-                <Link href={"https://jasanya.tech/"} className="text-red-600 underline">
+                <Link href={"https://jasanya.tech/"} className="text-indigo-700 underline mt-4">
                   Visit
                 </Link>
               </div>
