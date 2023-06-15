@@ -1,5 +1,6 @@
 import React from "react";
 import Navbars from "./headers/navbars";
+import Footers from "./footer/footers";
 
 
 export default function LayoutWraps({ children }: { children: React.ReactNode }) {
@@ -11,6 +12,7 @@ export default function LayoutWraps({ children }: { children: React.ReactNode })
       <main>
         {children}
       </main>
+      <Footers />
     </>
   )
 }

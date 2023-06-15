@@ -43,13 +43,13 @@ const Section1About = () => {
                 <div className="w-12 h-1 bg-red-800 rounded mt-2 mb-4" />
                 <p className="text-base">
                   All truth passes through three stages. First, it is ridiculed. Second, it is violently opposed.
-                  Third, it is accepted as being self-evident. <span className="text-xs text-gray-600">Arthur Schopenhauer</span>
+                  Third, it is accepted as being self-evident. <span className="text-xs text-gray-500">Arthur Schopenhauer</span>
                 </p>
               </div>
             </div>
             <div className="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
               <p className="leading-relaxed text-lg mb-4 text-gray-700">
-                <span className="text-2xl font-semibold text-red-400">Hello,</span> I am 26 y.o , i am someone who has broad interests in a variety of fields, including technology, business, computers, and the arts. In technology, I explore the latest innovations and advances, with a particular interest in the development of technology-driven applications and solutions.
+                <span className="text-2xl font-semibold text-red-600">Hello,</span> I am 26 y.o , i am someone who has broad interests in a variety of fields, including technology, business, computers, and the arts. In technology, I explore the latest innovations and advances, with a particular interest in the development of technology-driven applications and solutions.
                 Apart from that, I am also interested in technology-related business aspects, such as marketing strategy and product development. In the computer field, I have knowledge of and computer systems that enable me to create solutions and solve problems efficiently.
                 Lastly, in art, I find creativity and satisfaction in producing works of visual art, through photography or graphic design. My combination of interests in technology, business, computers, and the arts provides a unique perspective and diverse skills for living my journey.
               </p>

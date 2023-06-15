@@ -34,7 +34,7 @@ const Navbars = () => {
       <Navbar.Brand href={"/"}>
 
         <span className="self-center whitespace-nowrap text-xl font-semibold">
-          Lans<span className='text-[#AA5656] py-1 px-1'>PORTO</span>
+          Lans<span className='text-[#AA5656]'>PORTO</span>
         </span>
       </Navbar.Brand>
       <div className="flex md:order-2">
