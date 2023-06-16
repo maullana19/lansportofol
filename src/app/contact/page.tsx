@@ -7,97 +7,65 @@ export default function ContactPage() {
   return (
     <>
       <LayoutWraps>
-        <section className="relative">
-          <div className="container px-5 py-24 mx-auto">
-            <div className="flex flex-col text-center w-full mb-12">
-              <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">
-                Contact Me
-              </h1>
-              <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-                If I am not busy I will check it regularly
-              </p>
-            </div>
-            <div className="lg:w-1/2 md:w-2/3 mx-auto">
-              <div className="flex flex-wrap -m-2">
-                <div className="p-2 w-1/2">
-                  <div className="relative">
-                    <label htmlFor="name" className="leading-7 text-sm text-gray-600">
-                      Your Name
-                    </label>
-                    <input
-                      type="text"
-                      id="name"
-                      name="name"
-                      className="w-full bg-gray-200 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-                    />
-                  </div>
-                </div>
-                <div className="p-2 w-1/2">
-                  <div className="relative">
-                    <label htmlFor="email" className="leading-7 text-sm text-gray-600">
-                      Email
-                    </label>
-                    <input
-                      type="email"
-                      id="email"
-                      name="email"
-                      className="w-full bg-gray-200 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-                    />
-                  </div>
-                </div>
-                <div className="p-2 w-full">
-                  <div className="relative">
-                    <label
-                      htmlFor="message"
-                      className="leading-7 text-sm text-gray-600"
-                    >
-                      Message
-                    </label>
-                    <textarea
-                      id="message"
-                      name="message"
-                      className="w-full bg-gray-200 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
-                      defaultValue={""}
-                    />
-                  </div>
-                </div>
-                <div className="p-2 w-full">
-                  <button className="flex mx-auto text-white bg-gray-600 border-0 py-2 px-8 focus:outline-none hover:bg-red-700 rounded text-lg">
-                    Send
-                  </button>
-                </div>
-                <div className="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
-                  <a className="text-indigo-500">dedemaulana162@gmail.com</a>
-                  <p className="leading-normal my-5">
-                    Jakarta,
-                    <br />
-                    Indonesia
-                  </p>
-                  <span className="inline-flex">
-
-
-                    <Link href={"#"} className=" text-gray-500">
-                      <svg
-                        fill="none"
-                        stroke="currentColor"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        className="w-5 h-5"
-                        viewBox="0 0 24 24"
-                      >
-                        <rect width={20} height={20} x={2} y={2} rx={5} ry={5} />
-                        <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01" />
-                      </svg>
-                    </Link>
-
-                  </span>
-                </div>
+        <div className="h-screen flex justify-center items-center">
+          <div className="w-full max-w-md">
+            <h2 className="text-2xl font-bold mb-4">Contact Me</h2>
+            <form>
+              <div className="mb-4">
+                <label
+                  className="block text-gray-700 font-bold mb-2"
+                  htmlFor="name"
+                >
+                  Name
+                </label>
+                <input
+                  className="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                  id="name"
+                  type="text"
+                  placeholder="John Doe"
+                />
               </div>
+              <div className="mb-4">
+                <label
+                  className="block text-gray-700 font-bold mb-2"
+                  htmlFor="email"
+                >
+                  Email
+                </label>
+                <input
+                  className="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                  id="email"
+                  type="email"
+                  placeholder="example@example.com"
+                />
+              </div>
+              <div className="mb-4">
+                <label
+                  className="block text-gray-700 font-bold mb-2"
+                  htmlFor="message"
+                >
+                  Message
+                </label>
+                <textarea
+                  className="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                  id="message"
+
+                  placeholder="Your message here..."
+                ></textarea>
+              </div>
+              <button
+                className="  bg-red-500 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                type="submit"
+              >
+                Send Message
+              </button>
+            </form>
+            <div className="flex flex-col items-center mt-9">
+              <div>Or send me on your Gmail or something</div>
+              <p className="text-red-800">dedemaulana162@gmail.com</p>
             </div>
           </div>
-        </section>
-
+        </div>
       </LayoutWraps>
     </>
   )

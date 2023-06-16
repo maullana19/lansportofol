@@ -5,10 +5,10 @@ import Link from "next/link";
 
 const Footers = () => {
   return (
-    <footer className="px-24 py-4 bg-gray-200">
-      <div className="mx-auto  ">
-        <div className="md:flex md:justify-between">
-          <div className="mb-6 md:mb-0">
+    <footer className=" bg-gray-200 px-4 py-4 md:px-24">
+      <div className="mx-auto ">
+        <div className="">
+          <div className="mb-6 md:mb-8">
             <Link href="#" className="flex items-center">
               <Image
                 src="/logo/logo-192x.png"
@@ -17,14 +17,14 @@ const Footers = () => {
                 width={32}
                 height={32}
               />
-              <span className="self-center text-2xl font-semibold whitespace-nowrap ">
+              <span className="self-center text-lg font-semibold whitespace-nowrap ">
                 Lans<span className="text-[#AA5656]">PORTO</span>
               </span>
             </Link>
           </div>
           <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-2">
             <div>
-              <h2 className="mb-6 text-sm font-semibold uppercase ">
+              <h2 className="mb-6 text-sm font-semibold uppercase text-gray-600">
                 Resources
               </h2>
               <ul className="text-gray-600 ">
@@ -41,7 +41,7 @@ const Footers = () => {
               </ul>
             </div>
             <div>
-              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase ">
+              <h2 className="mb-6 text-sm font-semibold text-gray-600 uppercase ">
                 Follow Me
               </h2>
               <ul className="text-gray-600 ">
@@ -58,16 +58,15 @@ const Footers = () => {
 
           </div>
         </div>
-        <hr className="my-6 border-gray-400 sm:mx-auto  lg:my-8" />
+        <hr className="my-6 border-gray-400 " />
         <div className="sm:flex sm:items-center sm:justify-between">
-          <span className="text-sm text-gray-500 sm:text-center ">
-            © 2022{" "}
-            <a href={'/'} className="hover:underline">
-              LansPORTO
-            </a>
-            . Copyright.
+          <span className="text-sm text-gray-500 flex ">
+            ©Copyright 2022{" "}
+            <Link href={'/'} className="hover:underline">
+              <span className="ml-1">LansPORTO</span>
+            </Link>
           </span>
-          <div className="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
+          <div className="flex mt-4 space-x-2">
 
             <Link
               href={'https://www.instagram.com/lans19n/'}
@@ -86,9 +85,8 @@ const Footers = () => {
                 />
               </svg>
             </Link>
-
-            <a
-              href='https://github.com/maullana19'
+            <Link
+              href={'https://github.com/maullana19'}
               className="text-gray-500 hover:text-gray-900 "
             >
               <svg
@@ -103,8 +101,7 @@ const Footers = () => {
                   clipRule="evenodd"
                 />
               </svg>
-            </a>
-
+            </Link>
           </div>
         </div>
       </div>

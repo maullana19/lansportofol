@@ -5,8 +5,6 @@ import Link from 'next/link';
 import { usePathname } from "next/navigation";
 import { useState, useEffect } from 'react';
 
-
-
 const Navbars = () => {
   const [showNavbar, setShowNavbar] = useState(true)
   const pathname = usePathname();
@@ -19,45 +17,40 @@ const Navbars = () => {
         setShowNavbar(true)
       }
     }
-
     window.addEventListener('scroll', handleScrool);
-
     return () => {
       window.removeEventListener('scroll', handleScrool)
     }
   }, [])
   return (
     <Navbar
-
       className={`md:px-24  shadow fixed  z-30 left-0 right-0  ${showNavbar ? 'top-0 transition duration-500 ease-in-out' : '-top-full transition duration-500 ease-in-out'}`}
     >
       <Navbar.Brand href={"/"}>
-
-        <span className="self-center whitespace-nowrap text-xl font-semibold">
-          Lans<span className='text-[#AA5656]'>PORTO</span>
+        <span className="self-center whitespace-nowrap text-xl font-semibold ml-1">
+          Lans<span className='text-[#B14E46]'>PORTO</span>
         </span>
       </Navbar.Brand>
       <div className="flex md:order-2">
-        <Link className={"bg-[#AA5656] rounded-md px-3 py-2 font-semibold text-white hover:bg-red-800"} href={'/mystore'}>
-          My Store
+        <Link className={"bg-[#B14E46] rounded-md px-3 py-2  text-white hover:bg-red-800"} href={'/mystore'}>
+          Lans Store
         </Link>
         <Navbar.Toggle />
       </div>
       <Navbar.Collapse className={""}>
         <Navbar.Link
-          className={pathname === '/' ? 'font-bold text-red-500 underline' : 'font-normal'}
+          className={pathname === '/' ? 'font-bold text-[#B14E46] underline' : 'font-normal'}
           href={'/'}
-
         >
           Home
         </Navbar.Link>
-        <Navbar.Link className={pathname === '/about' ? 'font-bold text-red-500 underline' : 'font-normal'} href={"/about"}>
+        <Navbar.Link className={pathname === '/about' ? 'font-bold text-[#B14E46] underline' : 'font-normal'} href={"/about"}>
           About
         </Navbar.Link>
-        <Navbar.Link className={pathname === '/blog' ? 'font-bold text-red-500 underline' : 'font-normal'} href={"/blog"}>
+        <Navbar.Link className={pathname === '/blog' ? 'font-bold text-[#B14E46] underline' : 'font-normal'} href={"/blog"}>
           Blog
         </Navbar.Link>
-        <Navbar.Link className={pathname === '/contact' ? 'font-bold text-red-500 underline' : 'font-normal'} href={"/contact"}>
+        <Navbar.Link className={pathname === '/contact' ? 'font-bold text-[#B14E46] underline' : 'font-normal'} href={"/contact"}>
           Contact
         </Navbar.Link>
       </Navbar.Collapse>

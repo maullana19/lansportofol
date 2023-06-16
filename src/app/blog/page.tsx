@@ -1,6 +1,8 @@
 import LayoutWraps from "../components/layoutwrap";
-import BlogLayout from "./layout_blog";
+
 import { Metadata } from "next";
+import BlogLayout from "./layout_blog";
+
 
 export const metadata: Metadata = {
   title: "Blog",
@@ -11,7 +13,7 @@ export default function BlogPage() {
     <>
       <LayoutWraps>
         <BlogLayout>
-          <div>Currently under development</div>
+          This Page Under Development
         </BlogLayout>
       </LayoutWraps>
     </>

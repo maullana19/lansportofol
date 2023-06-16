@@ -3,21 +3,21 @@ import Link from "next/link";
 
 const SectionsHome1 = () => {
   return (
-    <section className="bg-center bg-no-repeat bg-[url('/img/bg-image1.jpg')] bg-gray-600 bg-blend-multiply">
-      <div className="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
-        <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">
+    <section className="bg-[url('/img/bg-image1.jpg')] bg-gray-600 flex bg-blend-multiply bg-cover md:bg-center min-h-screen justify-center items-center">
+      <div className="px-4 mx-auto  text-center py-24 ">
+        <h1 className="mb-6 text-5xl font-extrabold  md:tracking-tighter leading-none text-white md:text-5xl lg:text-6xl">
           Welcome To My Website
         </h1>
-        <p className="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">
+        <p className="mb-8 text-lg font-normal text-gray-300 ">
           Where here I focus on exploring a world that is unknown to all of us and finding out how the world and nature work
 
 
         </p>
 
-        <div className="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
+        <div className="flex flex-col space-y-4 ">
           <Link
             href={'/about'}
-            className="inline-flex justify-center items-center py-2 px-3 text-base font-medium text-center text-white rounded-lg hover:text-white hover:bg-red-500 hover:animate-bounce"
+            className="inline-flex justify-center items-center py-2 px-3 font-medium text-center text-white rounded-lg hover:text-white hover:bg-[#b14e46] hover:animate-bounce"
           >
             Get started
             <svg
