@@ -6,7 +6,7 @@ const fonts = Roboto({ weight: ['400', '700'], subsets: ['latin'] })
 
 export const metadata = {
   title: {
-    template: ' Lansportofol | %s'
+    template: ' Lansportofol - %s'
   }
 }
 

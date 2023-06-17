@@ -24,31 +24,31 @@ const Footers = () => {
           </div>
           <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-2">
             <div>
-              <h2 className="mb-6 text-sm font-semibold uppercase text-gray-600">
+              <h2 className="mb-6  font-semibold uppercase text-gray-600">
                 Resources
               </h2>
-              <ul className="text-gray-600 ">
+              <ul>
                 <li className="mb-4">
-                  <Link href={'https://nextjs.org/'} className="hover:underline">
+                  <Link href={'https://nextjs.org/'} className="hover:underline text-red-800">
                     Next JS
                   </Link>
                 </li>
                 <li>
-                  <Link href={"https://tailwindcss.com/"} className="hover:underline">
+                  <Link href={"https://tailwindcss.com/"} className="hover:underline text-red-800">
                     Tailwind CSS
                   </Link>
                 </li>
               </ul>
             </div>
             <div>
-              <h2 className="mb-6 text-sm font-semibold text-gray-600 uppercase ">
+              <h2 className="mb-6  font-semibold text-gray-600 uppercase ">
                 Follow Me
               </h2>
-              <ul className="text-gray-600 ">
+              <ul >
                 <li className="mb-4">
                   <Link
                     href={'https://github.com/maullana19'}
-                    className="hover:underline "
+                    className="hover:underline text-red-800"
                   >
                     Github
                   </Link>

@@ -18,7 +18,7 @@ const Section1About = () => {
   }
   return (
     <section className="bg-white">
-      <div className="flex justify-center items-center  px-4 py-4 md:px-24">
+      <div className="flex justify-center items-center  px-4 py-4 md:px-24 mb-7">
         <div className="mx-auto">
           <div className="rounded h-64 overflow-hidden">
             <Image
@@ -29,43 +29,48 @@ const Section1About = () => {
               height={550}
             />
           </div>
-          <div className="flex flex-col mt-10">
-            <div className="text-center ">
-              <div className="w-20 h-20 rounded-full inline-flex items-center justify-center bg-gray-200 text-gray-400">
+          <div className="flex flex-col mt-10 md:grid md:grid-rows-3 md:grid-flow-col md:gap-3 ">
+            <div className="text-center md:row-span-3">
+              <div className="w-20 h-20 md:mb-8 rounded-full inline-flex items-center justify-center bg-gray-200 text-gray-400">
                 <Image src={"/img/myphotoss.jpeg"} className="rounded-full" width={60} height={40} alt="myphotos" />
               </div>
-              <div className="flex flex-col items-center text-center justify-center">
-                <h2 className="font-bold mt-4 text-gray-800 text-2xl md:text-4xl">
-                  Dede Maulana
+              <div className="flex flex-col items-center text-center justify-center  md:-rotate-90 md:mt-16">
+                <h2 className="mt-4 text-gray-800 text-2xl font-light md:text-4xl">
+                  Dede <span className="text-red-800">Maulana</span>
                 </h2>
-                <div className="w-16 h-1 bg-red-800 rounded mt-2 mb-4 md:w-32" />
-                <p className="font-semibold">
-                  {" ' "}All truth passes through three stages. First, it is ridiculed. Second, it is violently opposed.
-                  Third, it is accepted as being self-evident.{" ' "} <span className="text-xs md:text-sm text-gray-500">Arthur Schopenhauer</span>
-                </p>
+                <div className="w-16 h-1 bg-red-800 rounded mt-2 mb-4 md:w-24" />
               </div>
             </div>
-            <div className=" border-gray-200  border-t py-4 px-4">
-              <p className="leading-relaxed text-lg mb-4 text-gray-700">
-                <span className="text-2xl font-semibold text-red-600">Hello,</span> I am 26 y.o , i am someone who has broad interests in a variety of fields, including technology, business, computers, and the arts. In technology, I explore the latest innovations and advances, with a particular interest in the development of technology-driven applications and solutions.
+            <div className="md:col-span-2 flex md:items-center px-2">
+              <p className="font-light">
+                {" ' "}All truth passes through three stages. First, it is ridiculed. Second, it is violently opposed.
+                Third, it is accepted as being self-evident.{" ' "} <span className="text-xs md:text-sm text-gray-500">Arthur Schopenhauer</span>
+              </p>
+            </div>
+            <div className=" border-gray-200  border-t py-2 px-2  md:border-l md:row-span-2 md:col-span-2">
+              <p className="leading-relaxed mb-4 text-gray-700">
+                <span className="text-2xl text-red-800">Hello,</span> I am 26 y.o , i am someone who has broad interests in a variety of fields, including technology, business, computers, and the arts. In technology, I explore the latest innovations and advances, with a particular interest in the development of technology-driven applications and solutions.
                 Apart from that, I am also interested in technology-related business aspects, such as marketing strategy and product development. In the computer field, I have knowledge of and computer systems that enable me to create solutions and solve problems efficiently.
                 Lastly, in art, I find creativity and satisfaction in producing works of visual art, through photography or graphic design. My combination of interests in technology, business, computers, and the arts provides a unique perspective and diverse skills for living my journey.
               </p>
               <div></div>
               {!readMore && (
-                <button onClick={handleReadMore} className="text-red-500 inline-flex items-center hover:underline">
-                  Read More
-                  <svg
+                <button onClick={handleReadMore} className="bg-red-800 rounded text-white px-2 py-1 inline-flex items-center hover:underline">
+                  Read More <svg
+                    xmlns="http://www.w3.org/2000/svg"
                     fill="none"
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    className="w-4 h-4 ml-2"
                     viewBox="0 0 24 24"
+                    strokeWidth="1.5"
+                    stroke="currentColor"
+                    className="w-5 h-5"
                   >
-                    <path d="M5 12h14M12 5l7 7-7 7" />
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M12 4.5v15m0 0l6.75-6.75M12 19.5l-6.75-6.75"
+                    />
                   </svg>
+
                 </button>
               )}
             </div>
@@ -73,7 +78,7 @@ const Section1About = () => {
         </div>
       </div>
       {readMore && (
-        <div className="py-4 px-8 mx-auto md:px-24">
+        <div className="py-4 px-6 mx-auto md:px-24">
           <div className="-my-8 divide-y-2 divide-gray-100">
             <div><h1 className="text-3xl text-gray-400 md:text-5xl">EDUCATION</h1></div>
             <div className="py-8 flex flex-wrap ">
@@ -90,7 +95,7 @@ const Section1About = () => {
                 <p className="leading-relaxed text-gray-500">
                   This is a school located in the area or village of Pandeglang, I majored in science while I was studying here
                 </p>
-                <Link href={"https://www.sman5pandeglang.sch.id/"} className="text-red-500 inline-flex items-center mt-4 hover:underline">
+                <Link href={"https://www.sman5pandeglang.sch.id/"} className="text-red-800 inline-flex items-center mt-4 hover:underline">
                   Visit
                   <svg
                     className="w-4 h-4 ml-2"
@@ -121,7 +126,7 @@ const Section1About = () => {
                 <p className="leading-relaxed text-gray-500">
                   Now I am studying at that campus, I am majoring in information technology, I am currently in semester 7
                 </p>
-                <Link href={"http://students.bsi.ac.id/mahasiswa/login_akd.aspx"} className="text-red-500 inline-flex items-center mt-4 hover:underline">
+                <Link href={"http://students.bsi.ac.id/mahasiswa/login_akd.aspx"} className="text-red-800 inline-flex items-center mt-4 hover:underline">
                   Visit
                   <svg
                     className="w-4 h-4 ml-2"

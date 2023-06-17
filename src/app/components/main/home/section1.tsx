@@ -3,21 +3,18 @@ import Link from "next/link";
 
 const SectionsHome1 = () => {
   return (
-    <section className="bg-[url('/img/bg-image1.jpg')] bg-gray-600 flex bg-blend-multiply bg-cover md:bg-center min-h-screen justify-center items-center">
+    <section className="bg-[url('/img/bg-image1.jpg')] bg-gray-600 flex bg-blend-multiply bg-cover bg-center md:bg-center min-h-screen justify-center items-center">
       <div className="px-4 mx-auto  text-center py-24 ">
-        <h1 className="mb-6 text-5xl font-extrabold  md:tracking-tighter leading-none text-white md:text-5xl lg:text-6xl">
+        <h1 className="mb-6 text-5xl font-extrabold  md:tracking-wider leading-none text-white md:text-5xl lg:text-6xl">
           Welcome To My Website
         </h1>
         <p className="mb-8 text-lg font-normal text-gray-300 ">
           Where here I focus on exploring a world that is unknown to all of us and finding out how the world and nature work
-
-
         </p>
-
         <div className="flex flex-col space-y-4 ">
           <Link
             href={'/about'}
-            className="inline-flex justify-center items-center py-2 px-3 font-medium text-center text-white rounded-lg hover:text-white hover:bg-[#b14e46] hover:animate-bounce"
+            className="inline-flex justify-center items-center py-2 px-3 font-medium text-center text-white rounded-lg hover:text-white hover:bg-red-800 hover:animate-bounce"
           >
             Get started
             <svg
