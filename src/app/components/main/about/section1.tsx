@@ -80,16 +80,16 @@ const Section1About = () => {
       {readMore && (
         <div className="py-4 px-6 mx-auto md:px-24">
           <div className="-my-8 divide-y-2 divide-gray-100">
-            <div><h1 className="text-3xl text-gray-400 md:text-5xl">EDUCATION</h1></div>
+            <div><h1 className="text-3xl text-gray-400 md:text-5xl mb-3">EDUCATION</h1></div>
             <div className="py-8 flex flex-wrap ">
               <div className="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
-                <span className="font-semibold title-font text-gray-700">
+                <span className="title-font text-gray-700">
                   High School
                 </span>
                 <span className="mt-1 text-gray-500 text-sm">2011 - 2014</span>
               </div>
               <div className="md:flex-grow">
-                <h2 className="text-2xl font-medium text-gray-900 title-font mb-2">
+                <h2 className="text-2xl  text-gray-900 title-font mb-2">
                   SMA Negeri 5 Pandeglang, Banten
                 </h2>
                 <p className="leading-relaxed text-gray-500">
@@ -114,13 +114,13 @@ const Section1About = () => {
             </div>
             <div className="py-8 flex flex-wrap md:flex-nowrap">
               <div className="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
-                <span className="font-semibold title-font text-gray-700">
+                <span className="title-font text-gray-700">
                   University
                 </span>
                 <span className="mt-1 text-gray-500 text-sm">2020 - 2024</span>
               </div>
               <div className="md:flex-grow">
-                <h2 className="text-2xl font-medium text-gray-900 title-font mb-2">
+                <h2 className="text-2xl  text-gray-900 title-font mb-2">
                   Bina Sarana Informatika, Jakarta
                 </h2>
                 <p className="leading-relaxed text-gray-500">
@@ -151,7 +151,7 @@ const Section1About = () => {
             <div className="flex mx-auto flex-wrap mb-20 ">
               <button className={`${activeTab === 1
                 ? ' justify-center px-2 py-2 border-b-2 font-bold inline-flex items-center  border-blue-600  text-blue-600'
-                : ' justify-center px-2 py-2 border-b-2  font-medium inline-flex items-center  border-gray-200 text-gray-500'}`}
+                : ' justify-center px-2 py-2 border-b-2   inline-flex items-center  border-gray-200 text-gray-500'}`}
                 onClick={() => handleActiveTabs(1)}
               >
 
@@ -159,7 +159,7 @@ const Section1About = () => {
               </button>
               <button className={`${activeTab === 2
                 ? ' justify-center px-2 py-2  border-b-2  font-bold inline-flex items-center  border-indigo-700 text-indigo-700 '
-                : ' justify-center px-2 py-2  border-b-2  font-medium inline-flex items-center  border-gray-200 text-gray-500'}`}
+                : ' justify-center px-2 py-2  border-b-2   inline-flex items-center  border-gray-200 text-gray-500'}`}
                 onClick={() => handleActiveTabs(2)}
               >
                 JASANYA.TECH
@@ -175,7 +175,7 @@ const Section1About = () => {
                 height={200}
               />
               <div className="flex flex-col text-center w-full">
-                <h1 className="text-2xl font-semibold mb-4 text-sky-500">
+                <h1 className="text-2xl mb-4 text-sky-500">
                   as Customer Service <span className="text-sm text-gray-500">- 3 years</span>
                 </h1>
                 <p className=" mx-auto leading-relaxed text-base text-gray-600">
@@ -194,7 +194,7 @@ const Section1About = () => {
                 height={500}
               />
               <div className="flex flex-col text-center w-full">
-                <h1 className="text-xl font-semibold mb-4 text-indigo-700">
+                <h1 className="text-xl mb-4 text-indigo-700">
                   as FrontEnd Developer <span className="text-xs text-gray-500">- 1 years</span>
                 </h1>
                 <p className="lg:w-2/3 mx-auto leading-relaxed text-base">

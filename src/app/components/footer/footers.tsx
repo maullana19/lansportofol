@@ -42,7 +42,7 @@ const Footers = () => {
             </div>
             <div>
               <h2 className="mb-6  font-semibold text-gray-600 uppercase ">
-                Follow Me
+                LINKS
               </h2>
               <ul >
                 <li className="mb-4">

@@ -10,7 +10,7 @@ const HeaderBlog = () => {
   const searchParams = useSearchParams();
 
   return (
-    <div className=" mt-16 flex px-4 py-2 justify-between md:px-24 bg-gray-100">
+    <div className=" mt-16 flex px-2 py-2 justify-between border-b border-gray-300">
       <div className="flex gap-5 ">
         <div>
           <Link className={pathnames === '/blog/dailyblog'
@@ -33,7 +33,6 @@ const HeaderBlog = () => {
             : 'font-normal text-gray-500'} href={"blog/project"}>Project</Link>
         </div>
       </div>
-
     </div>
   )
 }
