@@ -1,8 +1,8 @@
 import './globals.css'
-import { Roboto } from 'next/font/google'
+import { Lato } from 'next/font/google'
 import 'flowbite';
 
-const fonts = Roboto({ weight: ['400', '700'], subsets: ['latin'] })
+const fonts = Lato({ weight: ['400', '700'], subsets: ['latin'] })
 
 export const metadata = {
   title: {

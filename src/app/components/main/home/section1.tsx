@@ -39,8 +39,6 @@ const SectionsHome1 = () => {
         </div>
       </div>
     </section>
-
-
   )
 }
 
